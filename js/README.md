@@ -1,9 +1,9 @@
 # js 
 
 ## [关于call,apply,bind的实现]
-### [call](./context/call.js)
-### [apply](./context/apply.js)
-### [bind](./context/bind.js)
+> [call](./context/call.js)
+> [apply](./context/apply.js)
+> [bind](./context/bind.js)
 
 ## [关于promise的实现](./promise/promise.js)
 > 手写实现promise(Promise/A+规范)
