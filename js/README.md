@@ -1,6 +1,6 @@
 # js 
 
-## [关于call,apply,bind的实现]
+## 关于call,apply,bind的实现
 > [call](./context/call.js)
 > [apply](./context/apply.js)
 > [bind](./context/bind.js)
