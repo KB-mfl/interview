@@ -7,4 +7,4 @@
 >>思路
 >>>1.返回一个promsie return new promise((resolve,reject)=>{...})
 >>>2.接收的是一个数组，遍历每一个数组，如果不是promise直接赋值给arr[],如果是x.then的data赋值
->>>3.写一个判断是否是promise的函数isPromise，以及处理数据函数processData(key,valuy);当数据处理全部完成之后会有resolve(arr),chuzuo
+>>>3.写一个判断是否是promise的函数isPromise，以及处理数据函数processData(key,valuy);当数据处理全部完成之后会有resolve(arr),否则reject()
