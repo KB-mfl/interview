@@ -21,3 +21,9 @@
 > >思路
 > > >1.直接return p.then(onfilfulled,onrejected)
 > > >2.在onfilfulled需要return data;在onrejected需要throw err
+
+## 请求方式
+### [ajax](./request/ajax.js)
+> 注意:以上方式封装时，在其他文件引入的时候，输出是`{createAjax}`对象;
+> 如果以`export f = () =>{}`封装，则直接输出createAjax函数
+### [axios](./request/axios.js)
