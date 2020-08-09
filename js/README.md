@@ -7,8 +7,41 @@
 
 ## [关于数组扁平化处理](./flat/flat.js)
 
+## string的相关方法
+### slice
+> >`stringObject.prototype.slice(start,end)`
+> >`arrayObject.prototype.slice(start,end`
+> >切割一个数组(字符串也可以看为数组的一种形式)，返回一个子数组(子字符(串))，左闭右开，当为负数时，子元素的索引从右往左算;
+> >start必选参数，end为可选参数，如果没有指定end参数，那么切分的数组包含从 start 到数组结束的所有元素
+> >start大于end,返回空数组或者空字符
+
+### substring
+> >`stringObject.prototype.substring (start,end)`
+> >返回一个新的字符（串），不接受负数,start大于end时，会交换两个参数
+
+### substr
+> >`stringObject.prototype.substr(start,length)`
+> >该方法不建议使用
+> >返回一个新的字符(串) 
+
+### splice
+> >`arrayObject.prototype.splice(index,howmany,item1,item2...)`
+> >返回切割元素的数组，index,howmany，必选，默认为0
+> >...item可选，切割位置的代替元素
+> > 会改变原始数组
+
+### split
+> >`stringObject.prototype.split(separator,howmany)`
+> >返回切割的数组
+> >separator字符串或正则表达式,表示字符该从什么地方开始切割
+> >howmany返回的数组最大长度
+> >Array.prototype.join()执行操作是相反的,arr=>str
+### join
+> >`arrayObject.protitype.join(separator)` 
+> >可选。指定要使用的分隔符。如果省略该参数，则使用逗号作为分隔符。
+
 ## [关于promise的实现](./promise/promise.js)
-> 手写实现promise(Promise/A+规范)
+> 手写实现promise(Promise/A+规范) 
 ### promise 相关方法
 #### [all](./promise/promiseAll.js)
 > promise.all 可以解决等待所以异步操作全部的执行结束之后统一拿到结果，实现异步并发，同步处理结果
