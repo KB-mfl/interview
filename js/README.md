@@ -7,6 +7,11 @@
 
 ## [关于数组扁平化处理](./flat/flat.js)
 
+## 防抖节流
+### [防抖](../html/debounce.html)
+>防抖，防暴击，上一次点击和本次点击时间间隔小于delay，只需要执行最后一次(定时器)
+### [节流](../html/throttle.html)
+>节流 ,多次点击，单位时间delay之间(或大于)内只执行一次，最后一次点击必定执行(定时器+时间戳time,now)
 ## string的相关方法
 ### slice
 > >`stringObject.prototype.slice(start,end)`

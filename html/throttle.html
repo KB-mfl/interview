@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="button">点我</button>
+</body>
+<script>
+  let fn = () =>{
+    console.log('xixi')
+  }
+  let throttle = function(fn,delay=3000) {
+    let timer;
+    let time = new Date()
+    return function(...arg) {
+      let now = new Date();
+      clearTimeout(timer);
+      if(now-time>delay){
+        fn.call(this,...arg);
+        time = now
+      }else{
+        timer = setTimeout(()=>{
+          fn.call(this,...arg);
+        },delay)
+      }
+    }
+  }
+  document.getElementById('button').onclick = throttle(fn)
+</script>
+</html>
