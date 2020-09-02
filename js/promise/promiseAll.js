@@ -26,7 +26,6 @@ newPromise.all = function(values){
     }
     for(let i =0;i<values.length;i++){
       let current = values[i]
-      // console.log(current)
       if(isPromise(current)){
         current.then((data)=>{
           processData(i,data)

@@ -11,10 +11,3 @@ let debounce = (fn,delay = 500) =>{
 let zhu = ()=>{
   console.log('zhu')
 }
-while(1){
-  console.log(2)
-  setTimeout(()=>{
-    console.log('我要执行')
-    debounce(zhu,delay=1000)()
-  },100)
-}
