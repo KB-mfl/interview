@@ -2,7 +2,7 @@
  * @Author: zhuziqiang z2206071258@163.com
  * @Date: 2022-10-31 20:13:09
  * @LastEditors: zhuziqiang z2206071258@163.com
- * @LastEditTime: 2022-10-31 20:13:49
+ * @LastEditTime: 2022-10-31 21:38:36
  */
 const school = [
   {
@@ -10833,6 +10833,8 @@ const sichuang211 = [
   "西南财经大学",
   "四川农业大学",
 ];
+const yunnan985 = [];
+const yunnan211 = ["云南大学"];
 const fujian985 = ["厦门大学"];
 const fujina211 = ["厦门大学", "福州大学"];
 const gansu985 = ["兰州大学"];
@@ -11095,7 +11097,7 @@ const all211 = [
 const all985Id = all985.map((i) => school.filter((o) => o.name === i)[0]);
 const all211Id = all211.map((i) => school.filter((o) => o.name === i)[0]);
 
-console.log(all211Id.map((i) => i.id));
+// console.log(all211Id.map((i) => i.id));
 
 const valid211 = [
   372, 393, 371, 375, 376, 387, 377, 373, 382, 396, 417, 379, 374, 422, 399,
